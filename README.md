@@ -20,3 +20,8 @@ pip install -r backend/requirements.txt
 cd frontend;
 npm install
 ```
+
+### backend 
+```
+command to run backend: python3 manage.py runserver 0.0.0.0:8000
+```

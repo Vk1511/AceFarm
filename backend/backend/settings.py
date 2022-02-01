@@ -55,7 +55,19 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "backend.urls"
 
-AUTH_USER_MODEL = "authapp.Users" 
+AUTH_USER_MODEL = "authapp.Users"
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    ),
+    "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.IsAuthenticated",),
+}
+
+ALLOWED_HOSTS = [
+    "localhost",
+    "0.0.0.0",
+]
 
 TEMPLATES = [
     {
