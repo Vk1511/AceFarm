@@ -1,16 +1,27 @@
-from django.shortcuts import render
 from rest_framework import permissions, generics
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from .serializers import RegistartionsViewSerializer
+from django.contrib.auth import get_user_model
+from .serializers import (
+    RegistartionsViewSerializer,
+    MyTokenObtainPairSerializer,
+    LongerLifetimeTokenObtainPairWithSerializer,
+)
+from rest_framework_simplejwt.views import TokenObtainPairView
+
+User = get_user_model()
 
 
 class RegistartionsView(generics.CreateAPIView):
+    serializer_class = RegistartionsViewSerializer
+    permission_classes = (permissions.AllowAny,)
+    queryset = User.objects.all()
+
+
+class UserLoginView(TokenObtainPairView):
 
     permission_classes = (permissions.AllowAny,)
 
-    def get(self, request, *args, **kwargs):
-        serializer = RegistartionsViewSerializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        serializer.save()
-        return Response(serializer.data)
+    def get_serializer_class(self):
+        if not "remember_me" in self.request.data:
+            return MyTokenObtainPairSerializer
+        else:
+            return LongerLifetimeTokenObtainPairWithSerializer
