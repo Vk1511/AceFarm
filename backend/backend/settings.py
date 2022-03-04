@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     # user-define
     "backend",
     "authapp",
+    "products",
+    "category",
 ]
 
 MIDDLEWARE = [

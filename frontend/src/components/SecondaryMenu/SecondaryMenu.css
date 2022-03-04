@@ -1,0 +1,42 @@
+.secondarymenu{
+    display: flex;
+    background-color: #212121;
+    margin-top: .5rem;
+    color: #fff;
+    z-index: 100;
+}
+.secondarymenufixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+.secondarymenu > .secondarymenu_items{
+    flex-basis: 25%;
+}
+.secondarymenu_items > ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+.secondarymenu_items > ul > li:hover{
+    height: 100%;
+}
+.secondarymenu_search{
+    flex-basis: 57%;
+}
+.secondarymenu_search > .secondary_search_box{
+    width: 70%;
+}
+.secondarymenu_search > .secondary_search_box_hidden{
+    visibility: hidden;
+}
+.secondarymenu_search > .secondary_menu_icons > .primary_menu_icon{
+    margin-left: 1.5rem;
+}
+.secondarymenu_category{
+    flex-basis: 18%;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
