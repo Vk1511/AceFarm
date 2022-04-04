@@ -33,7 +33,7 @@ function SecondaryMenu() {
             </div>
         </div>
         <div className="secondarymenu_category common_flex linear_back">
-            Categories
+            Products
         </div>
     </div>
   )

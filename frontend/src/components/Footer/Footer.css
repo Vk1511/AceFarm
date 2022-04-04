@@ -1,6 +1,6 @@
 .footer_container{
     display: flex;
-    background-color: #212121;
+    background-color: #042F40;
     color: #fff;
     padding: 5rem 7rem;
     gap: 2rem;
@@ -25,15 +25,15 @@
 .footer_address{
     flex-basis: 25%;
 }
-ul{
+.footer_content > ul{
     list-style-type: none;
     padding: 0;
 }
-ul > li{
+.footer_content > ul > li{
     margin-bottom: 1rem;
     cursor: pointer;
 }
-ul > li:hover{
+.footer_content > ul > li:hover{
     /* font-size: 1.1rem; */
     transform: scale(1.1);
 }
@@ -48,4 +48,7 @@ ul > li:hover{
 .get_in_touch{
     display: flex;
     gap: .3rem;
+}
+.footer_copy{
+    padding: 1rem
 }

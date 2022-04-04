@@ -25,9 +25,10 @@
 .crousel_class > .crousel_content > .crousel_btn_div > .crousel_btn{
     padding: .7rem 2rem;
     font-size: 1rem;
-    color: #fff;
+    color: #042F40;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 .crousel_class > .crousel_img{
     flex-basis:40%;

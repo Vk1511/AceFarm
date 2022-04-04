@@ -4,7 +4,7 @@ import "./MemberCard.css";
 
 function MemberCard() {
   return (
-    <div className="membership_card linear_back common_flex">
+    <div className="membership_card  common_flex">
       <div className="membership_card_con">
         <div className="membership_card_design_con">
           <div className="membershi_c">
@@ -15,7 +15,7 @@ function MemberCard() {
                   <div className="membership_expire">valid 12/23</div>
                   <div className="membership_card_name">Vishw Kadu</div>
                   <div className="membership_card_number">
-                    2356 2345 6589 1234
+                    2356  2345  6589  1234
                   </div>
                 </div>
               </div>

@@ -3,6 +3,7 @@ import "./Features.css";
 import available from "../../Assets/Images/available.png";
 import organic from "../../Assets/Images/organic.png";
 import natural from "../../Assets/Images/natural.png";
+import trust from "../../Assets/Images/trust.svg";
 
 function Features() {
   return (
@@ -10,7 +11,7 @@ function Features() {
         <div className="feature_cards_con">
             <div className="feature_card">
                 <div className="feature_img">
-                    <img src={available} alt="organic" className="feature_img_data"/>
+                    <img src={trust} alt="organic" className="feature_img_data"/>
                 </div>
                 <div className="feature_heading">Availability</div>
                 <div className="feature_text">

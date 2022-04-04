@@ -1,34 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto+Slab&display=swap");
 
-body{
-  background-color: #F7F7F7;
+body {
+  background-color: #f7f7f7;
 }
-.common_flex{
+.common_flex {
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
-.flex_and_align{
+.flex_and_align {
   display: flex;
-  align-items: center
+  align-items: center;
 }
-.linear_back{
-  background-image: linear-gradient(
-        to right bottom,
-        #a8eb12,
-        #8fe331,
-        #77db44,
-        #60d152,
-        #4ac85d
-    );
-}
-.yello_linear_back{
+.linear_back {
   background-image: linear-gradient(
     to right bottom,
-    #FFCA04,
-    #f8ca24,
-    #f0cd52,
-    #e0c561,
-    #ddca87
-  )
+    #f3dc73, 
+    #f7da59,
+    #f8d63e,
+    #f8d01f,
+    #f7ca02
+  );
+  /* background-color: #FFCA04; */
+}
+.yello_linear_back {
+  background-image: linear-gradient(
+    to right bottom,
+    #f7b564,
+    #f5ac52,
+    #eea142,
+    #f19524,
+    #FA8901
+  );
 }

@@ -4,11 +4,12 @@ import "./Bestpoints.css";
 
 function Bestpoints() {
   return (
-    <div className="bestpoints_container common_flex linear_back">
+    <div className="bestpoints_container common_flex "> 
+    {/* linear_back */}
         <div className="bestpoint_card_con">
             <div className="bestpoints_card">
                 <div className="bestponits_icon">
-                    <CreditCardFilled style={{fontSize:"4rem", color:"#fff", paddingRight:".3rem"}}/> 
+                    <CreditCardFilled style={{fontSize:"3rem", color:"#F7CA02", paddingRight:".3rem"}}/> 
                     {/* 4FCA5B */}
                 </div>
                 <div className="bestpoints_content">
@@ -19,7 +20,7 @@ function Bestpoints() {
 
             <div className="bestpoints_card">
                 <div className="bestponits_icon">
-                    <CustomerServiceFilled style={{fontSize:"4rem", color:"#fff", paddingRight:".3rem"}}/>
+                    <CustomerServiceFilled style={{fontSize:"3rem", color:"#F7CA02", paddingRight:".3rem"}}/>
                 </div>
                 <div className="bestpoints_content">
                     <div className="bestpoint_head">24/7 SUPPORT</div>
@@ -29,7 +30,7 @@ function Bestpoints() {
 
             <div className="bestpoints_card">
                 <div className="bestponits_icon">
-                    <CarFilled style={{fontSize:"4rem", color:"#fff", paddingRight:".3rem"}}/>
+                    <CarFilled style={{fontSize:"3rem", color:"#F7CA02", paddingRight:".3rem"}}/>
                 </div>
                 <div className="bestpoints_content">
                     <div className="bestpoint_head">FREE DELIVERY</div>
@@ -39,7 +40,7 @@ function Bestpoints() {
 
             <div className="bestpoints_card">
                 <div className="bestponits_icon">
-                    <SmileFilled style={{fontSize:"4rem", color:"#fff", paddingRight:".3rem"}}/>
+                    <SmileFilled style={{fontSize:"3rem", color:"#F7CA02", paddingRight:".3rem"}}/>
                 </div>
                 <div className="bestpoints_content">
                     <div className="bestpoint_head">TRUSTED</div>

@@ -5,7 +5,7 @@
 .membership_card_con{
     width: 80%;
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
 }
 .membership_card_content{
     display: flex;
@@ -14,7 +14,7 @@
 }
 .membership_content_head{
     font-size: 2rem;
-    color: #fff;
+    /* color: #fff; */
     font-family: 'Roboto Slab', serif;
 }
 .membership_card_sub_content{
@@ -46,21 +46,21 @@
 .membership_card_label{
     font-size: 1.7rem;
     font-weight: bold;
-    color: #5E5C26;
+    color: #042F40;
 }
 .card_linear_back{
     background-image: linear-gradient(
       to right bottom,
-      #FFCE63,
-      #FCDC74,
-      #FCFA70,
-      #e0c561,
-      #ddca87
+      #d1d3d4,
+      #dde6eb,
+      #edf4fc,
+      #D3D6D7,
+      #d9dcdd
     )
   }
 .membership_card_details{
     font-family: 'Orbitron', sans-serif;
-    color: #4F2F07
+    color: #5A5F60;
 }
 .membership_expire{
     font-size: .7rem;

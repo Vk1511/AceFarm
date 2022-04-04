@@ -30,7 +30,7 @@
 .bestpoints_content > .bestpoint_head{
     font-size: 1.6rem;
     /* color: #393232; */
-    color: #fff;
+    color: black;
 }
 .bestpoints_content > .bestpoint_text{
     font-size: 1rem;

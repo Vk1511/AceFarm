@@ -12,6 +12,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
+    <>
     <div className="footer_container">
       <div className="footer_about">
         <div className="footer_head"></div>
@@ -144,6 +145,8 @@ function Footer() {
         </div>
       </div>
     </div>
+    <div className="footer_copy common_flex linear_back">© Copyright The Panch Organics. All Rights Reserved</div>
+    </>
   );
 }
 

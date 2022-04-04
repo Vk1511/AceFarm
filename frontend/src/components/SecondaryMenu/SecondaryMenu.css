@@ -1,6 +1,6 @@
 .secondarymenu{
     display: flex;
-    background-color: #212121;
+    background-color: #042F40;
     margin-top: .5rem;
     color: #fff;
     z-index: 100;
@@ -39,4 +39,5 @@
     flex-basis: 18%;
     font-weight: 600;
     font-size: 1.2rem;
+    color: #042F40;
 }
