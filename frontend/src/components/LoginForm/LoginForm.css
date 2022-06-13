@@ -1,0 +1,25 @@
+.login_con{
+    color: #042F40;
+    width: 75%;
+}
+.form_field{
+    margin-bottom: 1.3rem;
+}
+.form_input{
+    margin-top: 0.4rem;
+    outline: none;
+    border: 1px solid #d3d3d3;
+    height: 2rem;
+    width: 100%;;
+    border-radius: 0.2rem;
+}
+.login_btn{
+    padding: 0.7rem 2.5rem;
+    outline: none;
+    border: 1px solid #f3dc73;
+    border-radius: 1rem;
+    color: #042F40;
+    font-weight: 800;
+    margin-top: 0.3rem;
+    cursor: pointer;
+}

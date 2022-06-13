@@ -1,0 +1,17 @@
+.emptycart_con{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+.emptycart_img{
+    height:18rem;
+    width:18rem;
+}
+.empty_cart_btn{
+    outline:none;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: #042F40;
+}

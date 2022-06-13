@@ -1,0 +1,34 @@
+/* auth screen style */
+.auth_screen_container{
+    height: 100vh;
+    gap: 2rem;
+    background-image: url("/src/Assets/Images/background.svg");
+    background-size: cover;
+}
+.auth_box{
+    display:flex;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    min-width: 50%;
+    min-height: 50%;
+}
+.auth_design{
+    display: flex;
+    justify-content: center;
+    flex-basis: 40%;
+    flex-direction: column;
+    padding: 3rem;
+    color: #042F40;
+}
+.auth_form{
+    flex-basis: 60%;
+    padding: 0.5rem 0rem 3.5rem 2.5rem; 
+    background-color: #fff;
+}
+.auth_box_info{
+    text-align: center;
+}
+.auth_box_btn{
+    background-color: transparent;
+    border: 1px solid #042F40;
+    margin-top: 1.5rem;
+}

@@ -1,10 +1,9 @@
 .bestpoints_container{
-    margin-top: 2.5rem;
-    padding: 3.5rem 0;
+    padding: 2.5rem 0;
     /* background-color: # */
 }
 .bestpoint_card_con{
-    width: 80%;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;

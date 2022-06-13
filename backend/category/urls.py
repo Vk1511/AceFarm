@@ -10,6 +10,6 @@ from .views import CategoryView, Pybot
 router = routers.DefaultRouter()
 
 urlpatterns = [
-    path("", CategoryView.as_view(), name="CategoryView"),
-    path("sms/", Pybot.as_view(), name="pybot"),
+    # path("", CategoryView.as_view(), name="CategoryView"),
+    # path("sms/", Pybot.as_view(), name="pybot"),
 ]

@@ -105,7 +105,7 @@ function Footer() {
                       }}
                     />
                   </div>
-                  <div>Email: panchmoolorganics.help@gmail.com</div>
+                  <div>panchmoolorganics.help@gmail.com</div>
                 </div>
               </li>
               <li>
@@ -119,7 +119,7 @@ function Footer() {
                       }}
                     />
                   </div>
-                  <div>Phone: +91-12345678991</div>
+                  <div>+91-12345678991</div>
                 </div>
               </li>
               <li>

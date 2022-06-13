@@ -137,7 +137,7 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
         "NAME": "acefarm",
-        "USER": "root",
+        "USER": "acefarm_user",
         "PASSWORD": "password",
         "PORT": "3306",
         "HOST": "127.0.0.1",

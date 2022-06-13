@@ -4,9 +4,9 @@ import "./MemberCard.css";
 
 function MemberCard() {
   return (
-    <div className="membership_card  common_flex">
+    <div className="membership_card  common_flex linear_back">
       <div className="membership_card_con">
-        <div className="membership_card_design_con">
+        <div className="membership_card_design_con common_flex">
           <div className="membershi_c">
             <div className="membership_card_design_con">
               <div className="membership_card_design card_linear_back">
@@ -35,7 +35,7 @@ function MemberCard() {
           <div className="membership_content_btn">
             <Button
               type="primary"
-              className="membershipt_btn yello_linear_back"
+              className="membershipt_btn card_linear_back"
             >
               ADD TO CART
             </Button>

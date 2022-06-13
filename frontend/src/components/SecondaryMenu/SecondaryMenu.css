@@ -24,7 +24,8 @@
     height: 100%;
 }
 .secondarymenu_search{
-    flex-basis: 57%;
+    flex-basis: 60%;
+    /* background-color: red; */
 }
 .secondarymenu_search > .secondary_search_box{
     width: 70%;
@@ -32,11 +33,12 @@
 .secondarymenu_search > .secondary_search_box_hidden{
     visibility: hidden;
 }
-.secondarymenu_search > .secondary_menu_icons > .primary_menu_icon{
-    margin-left: 1.5rem;
+.secondarymenu_search > .secondary_menu_icons{
+    gap: 1rem;
+    width: 30%
 }
 .secondarymenu_category{
-    flex-basis: 18%;
+    flex-basis: 15%;
     font-weight: 600;
     font-size: 1.2rem;
     color: #042F40;

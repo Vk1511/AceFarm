@@ -1,0 +1,14 @@
+.my_order_con {
+  margin: 2rem;
+  color: #042F40;
+}
+.myorder_head {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.order_id {
+  /* padding: 1rem 0rem 0.5rem 0.5rem; */
+  padding: 0.5rem 0 0 0.5rem;
+  color: #666464;
+}

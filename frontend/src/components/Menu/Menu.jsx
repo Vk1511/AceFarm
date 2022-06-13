@@ -1,5 +1,5 @@
 import React from 'react'
-import panchmool from '../../Assets/Images/panchmool.png';
+import panchmool from '../../Assets/Images/panchmool.jpeg';
 import { UserOutlined, ShoppingCartOutlined } from '@ant-design/icons';
 import SearchBox from "../SearchBox/SearchBox";
 import "./Menu.css"

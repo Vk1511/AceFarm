@@ -23,6 +23,17 @@ body {
   );
   /* background-color: #FFCA04; */
 }
+.blue_linear_back {
+  background-image: linear-gradient(
+    to right bottom,
+    #0e9fd8,
+    #097ba8,
+    #076286,
+    #074963,
+    #042F40
+  );
+}
+
 .yello_linear_back {
   background-image: linear-gradient(
     to right bottom,

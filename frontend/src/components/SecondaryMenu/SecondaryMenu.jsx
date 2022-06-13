@@ -27,7 +27,7 @@ function SecondaryMenu() {
         </div>
         <div className="secondarymenu_search common_flex">
             <div className={show ? "secondary_search_box" : "secondary_search_box_hidden"}> <SearchBox /> </div>
-            <div className={show ? "secondary_menu_icons" : "secondary_search_box_hidden"}>
+            <div className={show ? "secondary_menu_icons common_flex" : "secondary_search_box_hidden"}>
                 <span className="primary_menu_icon"><UserOutlined style={{fontSize:"1.7rem", paddingRight:".3rem"}}/> Login</span>
                 <span className="primary_menu_icon"><ShoppingCartOutlined style={{fontSize:"1.7rem", paddingRight:".3rem"}}/> My Cart</span>
             </div>

@@ -1,15 +1,16 @@
 .crousel_class{
     display: flex;
-    padding: 3rem;
+    padding: 3rem 0;
     background: linear-gradient(#FED2AA, #F7F7F7);
     color: #393232;
 }
 .crousel_class > .crousel_content{
     flex-basis: 60%;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 30% 0 7%;
+    padding-left: 5%;
     gap: 1.8rem;
 }
 .crousel_class > .crousel_content > .crousel_heading > .crousel_tagline{
@@ -34,5 +35,5 @@
     flex-basis:40%;
     display: flex;
     justify-content: flex-end;
-    /* background-color: red; */
+    overflow: hidden;
 }

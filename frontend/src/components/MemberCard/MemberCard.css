@@ -14,19 +14,19 @@
 }
 .membership_content_head{
     font-size: 2rem;
-    /* color: #fff; */
+    color: #042F40;
     font-family: 'Roboto Slab', serif;
 }
 .membership_card_sub_content{
     width: 60%;
     font-weight: 400;
     line-height: 1.4rem;
-    color: #393232;
+    color: #042F40;
 }
 .membershipt_btn{
-    padding: .4rem .8rem;
+    padding: .5rem .8rem;
     border: 1px solid transparent;
-    color: #fff;
+    color: #042F40;
     border-radius: .2rem;
     cursor: pointer;
 }
@@ -64,5 +64,5 @@
 }
 .membership_expire{
     font-size: .7rem;
-    margin: 0 0 .5rem .8rem;
+    margin: 0 0 .5rem 0rem;
 }
