@@ -1,17 +1,36 @@
 import React from "react";
 import { Form, Input, Button, Checkbox } from 'antd';
+import {signUp} from "../../services/auth";
+import { useNavigate } from "react-router-dom";
 
 function SignupForm() {
+  const history = useNavigate();
+
+  const onFinish = (values) => {
+    let data = {
+      "email": values.username,
+      "first_name": values.Name,
+      "last_name": values.Name,
+      "phone_no": values.mobile,
+      "password": values.password
+    }
+    signUp(data).then((data) => {
+      history("/auth/login");
+    }).catch((error) => {
+      console.log("error",JSON.stringify(error.response.data))
+    })
+  }
+
   return (
     <div className="login_con">
-      <h1 style={{ marginBottom: "2rem" }}>Sign In</h1>
+      <h1 style={{ marginBottom: "2rem" }}>Sign Up</h1>
       <Form
         name="basic"
         // labelCol={{ span: 8 }}
         layout="vertical"
         // wrapperCol={{ span: 16 }}
         // initialValues={{ remember: true }}
-        // onFinish={onFinish}
+        onFinish={onFinish}
         // onFinishFailed={onFinishFailed}
         autoComplete="off"
       >
@@ -87,6 +106,7 @@ function SignupForm() {
             type="primary"
             htmlType="submit"
             className="login_btn linear_back"
+            // onClick={() => dispatch(registerUser())}
           >
             SIGN UP
           </Button>

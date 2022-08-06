@@ -23,7 +23,7 @@ router = routers.DefaultRouter()
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("auth/", include("authapp.urls")),
-    # path("api/products",include("products.urls")),
+    path("api/products/",include("products.urls")),
     path("api/category",include("category.urls")),
     path("user/token/refresh", TokenRefreshView.as_view()),
 ]

@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     "authapp",
     "products",
     "category",
+    "orders",
 ]
 
 MIDDLEWARE = [

@@ -2,17 +2,33 @@ import React from "react";
 import { Form, Input, Button, Checkbox,notification } from 'antd';
 import "./LoginForm.css";
 import { Link, Outlet } from "react-router-dom";
+import {signIn} from "../../services/auth";
+import { useNavigate } from "react-router-dom";
 
 function LoginForm() {
-  const openNotification = () => {
-    // const args = {
-    //   message: 'Sucess',
-    //   description:
-    //     'Login Sucessfully!',
-    //   duration: 0,
-    // };
-    // notification.open(args);
-  };
+  const history = useNavigate();
+
+  const onFinish = (values) => {
+    let data = {
+      "email": values.username,
+      "password": values.password
+    }
+    signIn(data).then((data) => {
+      notification['success']({
+        message: 'Success',
+        description: 'Login Sucessfully!',
+        duration: 1,
+      });
+      history("/");
+    }).catch((error) => {
+      notification['error']({
+        message: 'Error',
+        description: JSON.stringify(error.response.data),
+        duration: 5,
+      });
+    })
+  }
+
   return (
     <div className="login_con">
       <h1 style={{marginBottom:"2rem"}}>Sign In</h1>
@@ -22,7 +38,7 @@ function LoginForm() {
         layout="vertical"
         // wrapperCol={{ span: 16 }}
         // initialValues={{ remember: true }}
-        // onFinish={onFinish}
+        onFinish={onFinish}
         // onFinishFailed={onFinishFailed}
         autoComplete="off"
       >
@@ -54,12 +70,13 @@ function LoginForm() {
         </Form.Item> */}
 
         <Form.Item className="common_flex">
-          <Link to="/">
-          
-          <Button type="primary" htmlType="submit" className="login_btn linear_back" onClick={openNotification}>
+          <Button
+            type="primary"
+            htmlType="submit"
+            className="login_btn linear_back"
+          >
             SIGN IN
           </Button>
-          </Link>
         </Form.Item>
       </Form>
     </div>

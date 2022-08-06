@@ -12,7 +12,11 @@ function AuthScreen() {
             <div className="auth_design linear_back flex_and_align">
                 <h1>Welcome Back</h1>
                 <span className="auth_box_info">To connect with us, please SingUp with your personal info.</span>
-                <button className="login_btn auth_box_btn">SIGN UP</button>
+                <button className="login_btn auth_box_btn">
+                  {
+                    params.type === "login" ? "SIGN UP" : "SIGN IN"
+                  }
+                </button>
             </div>
             <div className="auth_form">
               {
