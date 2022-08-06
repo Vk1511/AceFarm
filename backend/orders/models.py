@@ -1,7 +1,7 @@
 from django.db import models
 
 from products.models import Products
-
+from authapp.models import Users
 # Create your models here.
 class Order(models.Model):
     
@@ -20,7 +20,8 @@ class Order(models.Model):
             blank=False,
             default=OrderStatus.ORDER_PLACED,
         )   
-    order_on = models.DateTimeField()
+    order_on = models.DateTimeField(auto_now_add=True,)
+    user_id = models.ForeignKey(Users, on_delete=models.CASCADE)
 
 class OrderProducts(models.Model):
 

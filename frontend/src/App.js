@@ -5,7 +5,7 @@ import CartScreen from "./screens/CartScreen";
 import AuthScreen from "./screens/AuthScreen";
 import Footer from './components/Footer/Footer';
 import EmptyCart from './components/Emptycart/EmptyCart';
-import "antd/dist/antd.css"
+// import "antd/dist/antd.css"
 import './App.css';
 import MyOrders from "./components/MyOrders/MyOrders";
 import ProductScreen from "./screens/ProductScreen";

@@ -25,5 +25,6 @@ urlpatterns = [
     path("auth/", include("authapp.urls")),
     path("api/products/",include("products.urls")),
     path("api/category",include("category.urls")),
+    path("api/order/",include("orders.urls")),
     path("user/token/refresh", TokenRefreshView.as_view()),
 ]
